@@ -59,3 +59,52 @@ export const addReview = asyncHandler(async (req, res, next) => {
 
   res.status(200).json({ success: true, data: review });
 });
+// @desc     Update review
+// @route    PUT api/v1/reviews/:id
+// @access   Privet
+export const updateReview = asyncHandler(async (req, res, next) => {
+  let review = await Review.findById(req.params.id);
+
+  if (!review) {
+    return next(
+      new ErrorResponse(`there is no review with ${req.params.id} id`, 404)
+    );
+  }
+
+  // make sure the review belongs to the user or user is an admin
+  if (review.user.toString() !== req.user.id && req.user.role !== "admin") {
+    return next(
+      new ErrorResponse(`the user doesn't have access to edit this review`, 401)
+    );
+  }
+
+  review = await Review.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true,
+  });
+
+  res.status(200).json({ success: true, data: review });
+});
+// @desc     Delete review
+// @route    DELETE api/v1/reviews/:id
+// @access   Privet
+export const deleteReview = asyncHandler(async (req, res, next) => {
+  const review = await Review.findById(req.params.id);
+
+  if (!review) {
+    return next(
+      new ErrorResponse(`there is no review with ${req.params.id} id`, 404)
+    );
+  }
+
+  // make sure the review belongs to the user or user is an admin
+  if (review.user.toString() !== req.user.id && req.user.role !== "admin") {
+    return next(
+      new ErrorResponse(`the user doesn't have access to edit this review`, 401)
+    );
+  }
+
+  await review.remove();
+
+  res.status(200).json({ success: true, data: {} });
+});
