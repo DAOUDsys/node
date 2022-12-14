@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add bcrytpjs
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add express-mongoose-sanitize
 
 PATH: 
-  C:\Users\hehgd\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\hehgd\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\nodejs;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Users\hehgd\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\hehgd\AppData\Local\Programs\Python\Python310;C:\Users\hehgd\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\hehgd\AppData\Local\Programs\Python\Python39;C:\Users\hehgd\AppData\Local\Microsoft\WindowsApps;C:\Users\hehgd\.dotnet\tools;C:\dart-sdk\bin;C:\flutter\bin;D:\Microsoft VS Code\bin;C:\Users\hehgd\AppData\Roaming\npm;D:\Downloads\maven\apache-maven-3.8.6\bin;C:\Program Files\Java\jdk-16.0.1\bin;C:\Program Files\dotnet;C:\Program Files (x86)\Yarn\bin;C:\Users\hehgd\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\hehgd\AppData\Local\Programs\Python\Python310;C:\Users\hehgd\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\hehgd\AppData\Local\Programs\Python\Python39;C:\Users\hehgd\AppData\Local\Microsoft\WindowsApps;C:\Users\hehgd\.dotnet\tools;C:\dart-sdk\bin;C:\flutter\bin;D:\Microsoft VS Code\bin;C:\Users\hehgd\AppData\Roaming\npm;D:\Downloads\maven\apache-maven-3.8.6\bin;C:\Users\hehgd\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+  C:\Users\hehgd\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\hehgd\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\nodejs;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Users\hehgd\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\hehgd\AppData\Local\Programs\Python\Python310;C:\Users\hehgd\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\hehgd\AppData\Local\Programs\Python\Python39;C:\Users\hehgd\AppData\Local\Microsoft\WindowsApps;C:\Users\hehgd\.dotnet\tools;C:\dart-sdk\bin;C:\flutter\bin;D:\Microsoft VS Code\bin;C:\Users\hehgd\AppData\Roaming\npm;D:\Downloads\maven\apache-maven-3.8.6\bin;C:\Program Files\Java\jdk-16.0.1\bin;C:\Program Files\dotnet;C:\Program Files (x86)\Yarn\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Users\hehgd\AppData\Local\Pub\Cache\bin;C:\Users\hehgd\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\hehgd\AppData\Local\Programs\Python\Python310;C:\Users\hehgd\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\hehgd\AppData\Local\Programs\Python\Python39;C:\Users\hehgd\AppData\Local\Microsoft\WindowsApps;C:\Users\hehgd\.dotnet\tools;C:\dart-sdk\bin;C:\flutter\bin;D:\Microsoft VS Code\bin;C:\Users\hehgd\AppData\Roaming\npm;D:\Downloads\maven\apache-maven-3.8.6\bin;C:\Users\hehgd\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
 
 Yarn version: 
   1.22.19
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/bcrytpjs: Not found
+  Error: https://registry.yarnpkg.com/express-mongoose-sanitize: Not found
       at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66145:18)
       at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140890:22)
       at Request.emit (node:events:527:28)
@@ -40,6 +40,8 @@ npm manifest:
     "author": "daoud",
     "license": "ISC",
     "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "cookie-parser": "^1.4.6",
       "dotenv": "^16.0.3",
       "express": "^4.18.2",
       "express-fileupload": "^1.4.0",
@@ -48,6 +50,7 @@ npm manifest:
       "mongoose": "^6.7.5",
       "morgan": "^1.10.0",
       "node-geocoder": "^4.2.0",
+      "nodemailer": "^6.8.0",
       "slugify": "^1.6.5"
     }
   }
@@ -834,6 +837,11 @@ Lockfile:
     dependencies:
       safe-buffer "5.1.2"
   
+  bcryptjs@^2.4.3:
+    version "2.4.3"
+    resolved "https://registry.yarnpkg.com/bcryptjs/-/bcryptjs-2.4.3.tgz#9ab5627b93e60621ff7cdac5da9733027df1d0cb"
+    integrity sha512-V/Hy/X9Vt7f3BbPJEi8BdVFMByHi+jNXrYkW3huaybV/kQ0KJg0Y6PkEMbn+zeT+i+SiKZ/HMqJGIIt4LZDqNQ==
+  
   bluebird@^3.5.2:
     version "3.7.2"
     resolved "https://registry.npmjs.org/bluebird/-/bluebird-3.7.2.tgz"
@@ -926,10 +934,23 @@ Lockfile:
     resolved "https://registry.npmjs.org/content-type/-/content-type-1.0.4.tgz"
     integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
   
+  cookie-parser@^1.4.6:
+    version "1.4.6"
+    resolved "https://registry.yarnpkg.com/cookie-parser/-/cookie-parser-1.4.6.tgz#3ac3a7d35a7a03bbc7e365073a26074824214594"
+    integrity sha512-z3IzaNjdwUC2olLIB5/ITd0/setiaFMLYiZJle7xg5Fe9KWAceil7xszYfHHBtDFYLSgJduS2Ty0P1uJdPDJeA==
+    dependencies:
+      cookie "0.4.1"
+      cookie-signature "1.0.6"
+  
   cookie-signature@1.0.6:
     version "1.0.6"
     resolved "https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz"
     integrity sha512-QADzlaHc8icV8I7vbaJXJwod9HWYp8uCqf1xa4OfNu1T7JVxQIrUgOWtHdNDtPiywmFbiS12VjotIXLrKM3orQ==
+  
+  cookie@0.4.1:
+    version "0.4.1"
+    resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.4.1.tgz#afd713fe26ebd21ba95ceb61f9a8116e50a537d1"
+    integrity sha512-ZwrFkGJxUR3EIoXtO+yVE69Eb7KlixbaeAWfBQB9vVsNn/o+Yw69gBWSSDK825hQNdN+wF8zELf3dFNl/kxkUA==
   
   cookie@0.5.0:
     version "0.5.0"
@@ -1402,6 +1423,11 @@ Lockfile:
     dependencies:
       bluebird "^3.5.2"
       node-fetch "^2.6.0"
+  
+  nodemailer@^6.8.0:
+    version "6.8.0"
+    resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.8.0.tgz#804bcc5256ee5523bc914506ee59f8de8f0b1cd5"
+    integrity sha512-EjYvSmHzekz6VNkNd12aUqAco+bOkRe3Of5jVhltqKhEsjw/y0PYPJfp83+s9Wzh1dspYAkUW/YNQ350NATbSQ==
   
   object-inspect@^1.9.0:
     version "1.12.2"

@@ -13,6 +13,12 @@ import authRouter from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import userRouter from "./routes/user.route.js";
 import reviewRouter from "./routes/review.route.js";
+import mongoSanitize from "express-mongo-sanitize";
+import helmet from "helmet";
+import xss from "xss-clean";
+import rateLimit from "express-rate-limit";
+import hpp from "hpp";
+import cors from "cors";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -31,16 +37,38 @@ app.use(express.json());
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
+app.use(logger);
 
 // file uploading
 app.use(fileupload());
 
+app.use(cookieParser());
+
+// sanitize data
+app.use(mongoSanitize());
+
+// set security headers
+app.use(helmet());
+
+// prevent XSS attacks
+app.use(xss());
+
+// enable cors
+app.use(cors());
+
+// rate limiting
+const limiter = rateLimit({
+  windowMs: 10 * 60 * 1000, // 10 mins
+  max: 100,
+});
+
+app.use(limiter);
+
+// prevent http param pollution
+app.use(hpp());
+
 // set static folder
 app.use(express.static(path.join(__dirname, "public")));
-
-app.use(logger);
-
-app.use(cookieParser());
 
 // mount routers
 app.use("/api/v1/bootcamps", bootcampRouter);
